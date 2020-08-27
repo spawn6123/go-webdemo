@@ -36,5 +36,5 @@ func main() {
 		Handler: mux,
 	}
 
-	server.ListenAndServe()
+	server.ListenAndServeTLS("./ssl/localhost+1.pem", "./ssl/localhost+1-key.pem")
 }
